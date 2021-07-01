@@ -23,9 +23,10 @@
     "string/string-date.type.ts",
     "string/string-fixed.type.ts",
     "string/string-of-length.type.ts",
-    "string/string-time",
+    "string/string-time.type.ts",
     "string/string-varying.type.ts",
-    "string/uuid.type.ts"
+    "string/uuid.type.ts",
+    "string/uuid4.type.ts"
   ],
   "keywords": [
     "types",
@@ -47,7 +48,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "types": "./index.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "class-validator": "~0.13.1",
     "typescript": ">=4.1.0"
