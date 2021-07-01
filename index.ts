@@ -5,4 +5,5 @@ export * from "./number/integer-range.type";
 export * from "./number/numeric.type";
 export * from "./string/string-date.type";
 export * from "./string/string-of-length.type";
+export * from "./string/string-varying.type";
 export * from "./string/uuid.type";
