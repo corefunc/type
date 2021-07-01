@@ -13,12 +13,17 @@
   "files": [
     "index.ts",
     "number/float-range.type.ts",
+    "number/index.ts",
+    "number/integer-16.type.ts",
     "number/integer-32.type.ts",
     "number/integer-64.type.ts",
     "number/integer-range.type.ts",
     "number/numeric.type.ts",
+    "string/index.ts",
     "string/string-date.type.ts",
+    "string/string-fixed.type.ts",
     "string/string-of-length.type.ts",
+    "string/string-time",
     "string/string-varying.type.ts",
     "string/uuid.type.ts"
   ],
@@ -42,8 +47,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "types": "./index.ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
-    "class-validator": "0.13.1"
+    "class-validator": "~0.13.1",
+    "typescript": ">=4.1.0"
   }
 }
