@@ -1,0 +1,35 @@
+{
+  "author": "Anton Trofimenko",
+  "bugs": {
+    "url": "https://github.com/corefunc/type/issues"
+  },
+  "contributors": [
+    {
+      "email": "r37r0m0d3l@protonmail.com",
+      "name": "Anton Trofimenko"
+    }
+  ],
+  "description": "Collection of types",
+  "keywords": [
+    "types",
+    "typescript",
+    "stdlib,",
+    "util,",
+    "utilities"
+  ],
+  "license": "MIT",
+  "main": "index.ts",
+  "name": "@corefunc/type",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corefunc/type.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "class-validator": "0.13.1"
+  }
+}
