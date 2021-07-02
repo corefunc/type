@@ -22,21 +22,21 @@ const value: TypeFloatRange<0.01, 99.99> = 10.50;
 ### Integer 16
 
 ```typescript
-import { TypeInteger16, isInteger16, assertInteger16 } from '@corefunc/type';
+import { TypeInteger16, isInteger16, assertInteger16, INT16, INT16_MAX, INT16_MIN } from '@corefunc/type';
 const value: TypeInteger16 = 32_767;
 ```
 
 ### Integer 32
 
 ```typescript
-import { TypeInteger32, isInteger32, assertInteger32 } from '@corefunc/type';
+import { TypeInteger32, isInteger32, assertInteger32, INT32, INT32_MAX, INT32_MIN } from '@corefunc/type';
 const value: TypeInteger32 = 2_147_483_647;
 ```
 
 ### Integer 64
 
 ```typescript
-import { TypeInteger64, isInteger64, assertInteger64 } from '@corefunc/type';
+import { TypeInteger64, isInteger64, assertInteger64, INT64, INT64_MAX, INT64_MIN } from '@corefunc/type';
 const value: TypeInteger64 = 9_223_372_036_854_775_807;
 ```
 
