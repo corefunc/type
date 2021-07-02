@@ -79,8 +79,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "types": "./index.ts",
-  "version": "1.0.5",
+  "types": "./index.d.ts",
+  "version": "1.0.6",
   "dependencies": {
     "class-validator": "~0.13.1",
     "typescript": ">=4.1.0"
