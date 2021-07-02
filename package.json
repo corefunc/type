@@ -52,8 +52,7 @@
     "utilities"
   ],
   "license": "MIT",
-  "main": "index.ts",
-  "module": "./index.ts",
+  "main": "index.js",
   "name": "@corefunc/type",
   "private": false,
   "repository": {
@@ -64,7 +63,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "types": "./index.d.ts",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "dependencies": {
     "class-validator": "~0.13.1",
     "typescript": ">=4.1.0"
