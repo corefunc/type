@@ -15,42 +15,54 @@ TypeScript common types.
 ### Float
 
 ```typescript
-import { TypeFloatRange, isFloatRange, assertFloatRange } from '@corefunc/type';
+import {
+  TypeFloatRange, isFloatRange, assertFloatRange
+} from '@corefunc/type';
 const value: TypeFloatRange<0.01, 99.99> = 10.50;
 ```
 
 ### Integer 16
 
 ```typescript
-import { TypeInteger16, isInteger16, assertInteger16, INT16, INT16_MAX, INT16_MIN } from '@corefunc/type';
+import {
+  TypeInteger16, isInteger16, assertInteger16, INT16, INT16_MAX, INT16_MIN
+} from '@corefunc/type';
 const value: TypeInteger16 = 32_767;
 ```
 
 ### Integer 32
 
 ```typescript
-import { TypeInteger32, isInteger32, assertInteger32, INT32, INT32_MAX, INT32_MIN } from '@corefunc/type';
+import {
+  TypeInteger32, isInteger32, assertInteger32, INT32, INT32_MAX, INT32_MIN
+} from '@corefunc/type';
 const value: TypeInteger32 = 2_147_483_647;
 ```
 
 ### Integer 64
 
 ```typescript
-import { TypeInteger64, isInteger64, assertInteger64, INT64, INT64_MAX, INT64_MIN } from '@corefunc/type';
+import {
+  TypeInteger64, isInteger64, assertInteger64, INT64, INT64_MAX, INT64_MIN
+} from '@corefunc/type';
 const value: TypeInteger64 = 9_223_372_036_854_775_807;
 ```
 
 ### Integer Range
 
 ```typescript
-import { TypeIntegerRange, isIntegerRange, assertIntegerRange } from '@corefunc/type';
+import {
+  TypeIntegerRange, isIntegerRange, assertIntegerRange
+} from '@corefunc/type';
 const value: TypeIntegerRange<0, 100> = 50;
 ```
 
 ### Numeric
 
 ```typescript
-import { TypeNumeric, isNumeric, assertNumeric } from '@corefunc/type';
+import {
+ TypeNumeric, isNumeric, assertNumeric
+} from '@corefunc/type';
 const value: TypeNumeric<5, 2> = 999.99;
 ```
 
@@ -59,35 +71,45 @@ const value: TypeNumeric<5, 2> = 999.99;
 ### String Date
 
 ```typescript
-import { TypeStringDate, isStringDate, assertStringDate } from '@corefunc/type';
+import {
+  TypeStringDate, isStringDate, assertStringDate
+} from '@corefunc/type';
 const value: TypeStringDate = "2020-01-01";
 ```
 
 ### String Fixed
 
 ```typescript
-import { TypeStringFixed, isStringFixed, assertStringFixed } from '@corefunc/type';
+import {
+  TypeStringFixed, isStringFixed, assertStringFixed
+} from '@corefunc/type';
 const value: TypeStringFixed<3> = "USD";
 ```
 
 ### String Of Length
 
 ```typescript
-import { TypeStringOfLength, isStringOfLength, assertStringOfLength } from '@corefunc/type';
+import {
+  TypeStringOfLength, isStringOfLength, assertStringOfLength
+} from '@corefunc/type';
 const value: TypeStringOfLength<2, 99> = "Billy";
 ```
 
 ### String Time
 
 ```typescript
-import { TypeStringTime, isStringTime, assertStringTime } from '@corefunc/type';
+import {
+  TypeStringTime, isStringTime, assertStringTime
+} from '@corefunc/type';
 const value: TypeStringTime = "12:59";
 ```
 
 ### String Varying
 
 ```typescript
-import { TypeStringVarying, isStringVarying, assertStringVarying } from '@corefunc/type';
+import {
+  TypeStringVarying, isStringVarying, assertStringVarying
+} from '@corefunc/type';
 const value: TypeStringVarying<254> = "user+inbox@domain";
 ```
 
