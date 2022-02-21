@@ -20,7 +20,7 @@ exports.INT16_MIN = -32767;
  * @return {boolean}
  */
 function isInteger16(inputInteger16) {
-  return inputInteger16 >= exports.INT16_MIN && inputInteger16 <= exports.INT16_MAX;
+    return inputInteger16 >= exports.INT16_MIN && inputInteger16 <= exports.INT16_MAX;
 }
 exports.isInteger16 = isInteger16;
 /**
@@ -30,12 +30,12 @@ exports.isInteger16 = isInteger16;
  * @throws {Range|TypeError}
  */
 function assertInteger16(inputInteger) {
-  if (typeof inputInteger !== "number") {
-    throw new TypeError("Invalid input [" + inputInteger + "], value is not a number");
-  }
-  if (!isInteger16(inputInteger)) {
-    throw new RangeError("Input integer [" + inputInteger + "] is not in integer 2 bytes range");
-  }
-  return inputInteger;
+    if (typeof inputInteger !== "number") {
+        throw new TypeError("Invalid input [".concat(inputInteger, "], value is not a number"));
+    }
+    if (!isInteger16(inputInteger)) {
+        throw new RangeError("Input integer [".concat(inputInteger, "] is not in integer 2 bytes range"));
+    }
+    return inputInteger;
 }
 exports.assertInteger16 = assertInteger16;

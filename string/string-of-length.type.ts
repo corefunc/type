@@ -1,11 +1,20 @@
+/**
+ * @type {string}
+ */
 export type TypeStringOfLength<MinimumLength, MaximumLength> = string & {
   readonly __string_of_length__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringOfLengthType<MinimumLength, MaximumLength> = string & {
   readonly __string_of_length__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringOfLength<MinimumLength, MaximumLength> = string & {
   readonly __string_of_length__: void;
 };

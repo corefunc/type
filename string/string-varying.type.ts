@@ -1,11 +1,20 @@
+/**
+ * @type {string}
+ */
 export type TypeStringVarying<MaximumLength> = string & {
   readonly __string_varying__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringVaryingType<MaximumLength> = string & {
   readonly __string_varying__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringVarying<MaximumLength> = string & {
   readonly __string_varying__: void;
 };

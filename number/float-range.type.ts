@@ -1,4 +1,17 @@
+/**
+ * @type {number}
+ */
 export type TypeFloatRange<MinimumFloat, MaximumFloat> = number & { __float_range__: void };
+
+/**
+ * @type {number}
+ */
+export type FloatRangeType<MinimumFloat, MaximumFloat> = number & { __float_range__: void };
+
+/**
+ * @type {number}
+ */
+export type FloatRange<MinimumFloat, MaximumFloat> = number & { __float_range__: void };
 
 export function isFloatRange<MinimumFloat extends number, MaximumFloat extends number>(
   inputFloat: number,

@@ -19,8 +19,27 @@ export const INT32_MIN: number = -2_147_483_647 as const;
  * @alias integer
  * @alias int32
  * @alias integer32
+ * @type {number}
  */
 export type TypeInteger32 = number & { __integer_32__: void };
+
+/**
+ * @alias int
+ * @alias integer
+ * @alias int32
+ * @alias integer32
+ * @type {number}
+ */
+export type Integer32Type = number & { __integer_32__: void };
+
+/**
+ * @alias int
+ * @alias integer
+ * @alias int32
+ * @alias integer32
+ * @type {number}
+ */
+export type Integer32 = number & { __integer_32__: void };
 
 /**
  * @name isInteger32

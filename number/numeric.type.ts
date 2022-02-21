@@ -1,4 +1,17 @@
+/**
+ * @type {number}
+ */
 export type TypeNumeric<Precision, Scale> = number & { __numeric__: void };
+
+/**
+ * @type {number}
+ */
+export type NumericType<Precision, Scale> = number & { __numeric__: void };
+
+/**
+ * @type {number}
+ */
+export type Numeric<Precision, Scale> = number & { __numeric__: void };
 
 export function isNumeric<Precision extends number, Scale extends number>(
   inputNumeric: number,

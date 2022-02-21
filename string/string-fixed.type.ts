@@ -1,11 +1,20 @@
+/**
+ * @type {string}
+ */
 export type TypeStringFixed<FixedLength> = string & {
   readonly __string_fixed__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringFixedType<FixedLength> = string & {
   readonly __string_fixed__: void;
 };
 
+/**
+ * @type {string}
+ */
 export type StringFixed<FixedLength> = string & {
   readonly __string_fixed__: void;
 };
