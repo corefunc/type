@@ -18,7 +18,7 @@ export declare const INT64_MIN: number;
  * @alias integer64
  */
 export declare type TypeInteger64 = number & {
-    __integer_64__: void;
+  __integer_64__: void;
 };
 /**
  * @name isInteger64

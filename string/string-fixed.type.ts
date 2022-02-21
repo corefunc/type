@@ -2,6 +2,14 @@ export type TypeStringFixed<FixedLength> = string & {
   readonly __string_fixed__: void;
 };
 
+export type StringFixedType<FixedLength> = string & {
+  readonly __string_fixed__: void;
+};
+
+export type StringFixed<FixedLength> = string & {
+  readonly __string_fixed__: void;
+};
+
 export function isStringFixed<FixedLength extends number>(
   inputString: string,
   fixedLength: FixedLength,
@@ -9,7 +17,10 @@ export function isStringFixed<FixedLength extends number>(
   return inputString.length === fixedLength;
 }
 
-export function assertStringFixed<FixedLength extends number>(inputString: unknown, fixedLength: FixedLength): TypeStringFixed<FixedLength> {
+export function assertStringFixed<FixedLength extends number>(
+  inputString: unknown,
+  fixedLength: FixedLength,
+): TypeStringFixed<FixedLength> {
   if (typeof inputString !== "string") {
     throw new Error(`Invalid input [${inputString}], value is not a string`);
   }

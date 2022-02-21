@@ -18,7 +18,9 @@ export function assertNumeric<Precision extends number, Scale extends number>(
     throw new Error(`Invalid input [${inputNumeric}], value is not a number`);
   }
   if (!isNumeric(inputNumeric, precision, scale)) {
-    throw new Error(`Input numeric [${inputNumeric}] is not between specified precision [${precision}] and scale [${scale}]`);
+    throw new Error(
+      `Input numeric [${inputNumeric}] is not between specified precision [${precision}] and scale [${scale}]`,
+    );
   }
   return inputNumeric;
 }

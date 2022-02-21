@@ -2,6 +2,14 @@ export type TypeStringOfLength<MinimumLength, MaximumLength> = string & {
   readonly __string_of_length__: void;
 };
 
+export type StringOfLengthType<MinimumLength, MaximumLength> = string & {
+  readonly __string_of_length__: void;
+};
+
+export type StringOfLength<MinimumLength, MaximumLength> = string & {
+  readonly __string_of_length__: void;
+};
+
 export function isStringOfLength<MinimumLength extends number, MaximumLength extends number>(
   inputString: string,
   minimumLength: MinimumLength,
@@ -19,7 +27,9 @@ export function assertStringOfLength<MinimumLength extends number, MaximumLength
     throw new Error(`Invalid input [${inputString}], value is not a string`);
   }
   if (!isStringOfLength(inputString, minimumLength, maximumLength)) {
-    throw new Error(`Input string [${inputString}] length is not between specified [${minimumLength}] and [${maximumLength}]`);
+    throw new Error(
+      `Input string [${inputString}] length is not between specified [${minimumLength}] and [${maximumLength}]`,
+    );
   }
   return inputString;
 }

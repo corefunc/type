@@ -17,7 +17,7 @@ export declare const INT16_MIN: number;
  * @alias integer16
  */
 export declare type TypeInteger16 = number & {
-    __integer_16__: void;
+  __integer_16__: void;
 };
 /**
  * @name isInteger16

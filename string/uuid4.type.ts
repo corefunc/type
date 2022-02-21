@@ -1,6 +1,14 @@
-import {isUUID} from "class-validator";
+import { isUUID } from "class-validator";
 
 export type TypeUUID4 = string & {
+  readonly __uuid_4__: void;
+};
+
+export type UUID4Type = string & {
+  readonly __uuid_4__: void;
+};
+
+export type UUID4 = string & {
   readonly __uuid_4__: void;
 };
 

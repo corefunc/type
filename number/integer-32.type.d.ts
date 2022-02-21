@@ -18,7 +18,7 @@ export declare const INT32_MIN: number;
  * @alias integer32
  */
 export declare type TypeInteger32 = number & {
-    __integer_32__: void;
+  __integer_32__: void;
 };
 /**
  * @name isInteger32

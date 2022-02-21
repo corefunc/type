@@ -71,60 +71,57 @@ const value: TypeNumeric<5, 2> = 999.99;
 ### String Date
 
 ```typescript
-import {
-  TypeStringDate, isStringDate, assertStringDate
-} from '@corefunc/type';
-const value: TypeStringDate = "2020-01-01";
+import { TypeStringDate, isStringDate, assertStringDate } from '@corefunc/type';
+import type { TypeStringDate, StringDateType, StringDate } from '@corefunc/type';
+const value: StringDate = "2020-01-01";
 ```
 
 ### String Fixed
 
 ```typescript
-import {
-  TypeStringFixed, isStringFixed, assertStringFixed
-} from '@corefunc/type';
-const value: TypeStringFixed<3> = "USD";
+import { isStringFixed, assertStringFixed } from '@corefunc/type';
+import type { TypeStringFixed, StringFixedType, StringFixed } from '@corefunc/type';
+const value: StringFixed<3> = "USD";
 ```
 
 ### String Of Length
 
 ```typescript
-import {
-  TypeStringOfLength, isStringOfLength, assertStringOfLength
-} from '@corefunc/type';
-const value: TypeStringOfLength<2, 99> = "Billy";
+import { isStringOfLength, assertStringOfLength } from '@corefunc/type';
+import type { TypeStringOfLength, StringOfLengthType, StringOfLength } from '@corefunc/type';
+const value: StringOfLength<2, 99> = "Billy";
 ```
 
 ### String Time
 
 ```typescript
-import {
-  TypeStringTime, isStringTime, assertStringTime
-} from '@corefunc/type';
-const value: TypeStringTime = "12:59";
+import { isStringTime, assertStringTime } from '@corefunc/type';
+import type { TypeStringTime, StringTimeType, StringTime } from '@corefunc/type';
+const value: StringTime = "12:59";
 ```
 
 ### String Varying
 
 ```typescript
-import {
-  TypeStringVarying, isStringVarying, assertStringVarying
-} from '@corefunc/type';
-const value: TypeStringVarying<254> = "user+inbox@domain";
+import { isStringVarying, assertStringVarying } from '@corefunc/type';
+import type { TypeStringVarying, StringVaryingType, StringVarying } from '@corefunc/type';
+const value: StringVarying<254> = "user+inbox@domain";
 ```
 
 ### UUID
 
 ```typescript
-import { TypeUUID, isUuid, assertUuid } from '@corefunc/type';
-const value: TypeUUID = "0b0bc0f0-db42-11eb-8d19-0242ac130003";
+import { isUuid, assertUuid } from '@corefunc/type';
+import type { TypeUUID, UUIDType, UUID } from '@corefunc/type';
+const value: UUID = "0b0bc0f0-db42-11eb-8d19-0242ac130003";
 ```
 
 ### UUID 4
 
 ```typescript
-import { TypeUUID4, isUuid4, assertUuid4 } from '@corefunc/type';
-const value: TypeUUID4 = "155fbaaf-09de-4141-80df-94696eed4cb6";
+import { isUuid4, assertUuid4 } from '@corefunc/type';
+import type { TypeUUID4, UUID4Type, UUID4 } from '@corefunc/type';
+const value: UUID4 = "155fbaaf-09de-4141-80df-94696eed4cb6";
 ```
 
 ## See also

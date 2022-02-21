@@ -20,7 +20,7 @@ exports.INT32_MIN = -2147483647;
  * @return {boolean}
  */
 function isInteger32(inputInteger32) {
-    return inputInteger32 >= exports.INT32_MIN && inputInteger32 <= exports.INT32_MAX;
+  return inputInteger32 >= exports.INT32_MIN && inputInteger32 <= exports.INT32_MAX;
 }
 exports.isInteger32 = isInteger32;
 /**
@@ -30,12 +30,12 @@ exports.isInteger32 = isInteger32;
  * @throws {Range|TypeError}
  */
 function assertInteger32(inputInteger) {
-    if (typeof inputInteger !== "number") {
-        throw new TypeError("Invalid input [" + inputInteger + "], value is not a number");
-    }
-    if (!isInteger32(inputInteger)) {
-        throw new RangeError("Input integer [" + inputInteger + "] is not in integer 4 bytes range");
-    }
-    return inputInteger;
+  if (typeof inputInteger !== "number") {
+    throw new TypeError("Invalid input [" + inputInteger + "], value is not a number");
+  }
+  if (!isInteger32(inputInteger)) {
+    throw new RangeError("Input integer [" + inputInteger + "] is not in integer 4 bytes range");
+  }
+  return inputInteger;
 }
 exports.assertInteger32 = assertInteger32;

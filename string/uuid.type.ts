@@ -4,6 +4,14 @@ export type TypeUUID = string & {
   readonly __uuid__: void;
 };
 
+export type UUIDType = string & {
+  readonly __uuid__: void;
+};
+
+export type UUID = string & {
+  readonly __uuid__: void;
+};
+
 export function isUuid(inputUUID: string): inputUUID is TypeUUID {
   return isUUID(inputUUID);
 }
