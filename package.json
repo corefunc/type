@@ -9,7 +9,14 @@
       "name": "Anton Trofimenko"
     }
   ],
+  "dependencies": {
+    "class-validator": "0.13.*"
+  },
   "description": "Collection of types",
+  "devDependencies": {
+    "prettier": "2.4.1",
+    "typescript": ">=4.1.0"
+  },
   "files": [
     "index.js",
     "index.d.ts",
@@ -63,9 +70,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "types": "./index.d.ts",
-  "version": "1.0.9",
-  "dependencies": {
-    "class-validator": "~0.13.1",
-    "typescript": ">=4.1.0"
-  }
+  "version": "1.0.10"
 }

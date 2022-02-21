@@ -7,10 +7,10 @@ function isStringOfLength(inputString, minimumLength, maximumLength) {
 exports.isStringOfLength = isStringOfLength;
 function assertStringOfLength(inputString, minimumLength, maximumLength) {
     if (typeof inputString !== "string") {
-        throw new Error("Invalid input [" + inputString + "], value is not a string");
+        throw new Error("Invalid input [".concat(inputString, "], value is not a string"));
     }
     if (!isStringOfLength(inputString, minimumLength, maximumLength)) {
-        throw new Error("Input string [" + inputString + "] length is not between specified [" + minimumLength + "] and [" + maximumLength + "]");
+        throw new Error("Input string [".concat(inputString, "] length is not between specified [").concat(minimumLength, "] and [").concat(maximumLength, "]"));
     }
     return inputString;
 }

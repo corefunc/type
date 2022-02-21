@@ -19,8 +19,27 @@ export const INT64_MIN: number = -9_223_372_036_854_775_807 as const;
  * @alias biginteger
  * @alias int64
  * @alias integer64
+ * @type {number}
  */
 export type TypeInteger64 = number & { __integer_64__: void };
+
+/**
+ * @alias bigint
+ * @alias biginteger
+ * @alias int64
+ * @alias integer64
+ * @type {number}
+ */
+export type Integer64Type = number & { __integer_64__: void };
+
+/**
+ * @alias bigint
+ * @alias biginteger
+ * @alias int64
+ * @alias integer64
+ * @type {number}
+ */
+export type Integer64 = number & { __integer_64__: void };
 
 /**
  * @name isInteger64

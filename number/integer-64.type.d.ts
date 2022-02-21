@@ -16,8 +16,29 @@ export declare const INT64_MIN: number;
  * @alias biginteger
  * @alias int64
  * @alias integer64
+ * @type {number}
  */
 export declare type TypeInteger64 = number & {
+    __integer_64__: void;
+};
+/**
+ * @alias bigint
+ * @alias biginteger
+ * @alias int64
+ * @alias integer64
+ * @type {number}
+ */
+export declare type Integer64Type = number & {
+    __integer_64__: void;
+};
+/**
+ * @alias bigint
+ * @alias biginteger
+ * @alias int64
+ * @alias integer64
+ * @type {number}
+ */
+export declare type Integer64 = number & {
     __integer_64__: void;
 };
 /**

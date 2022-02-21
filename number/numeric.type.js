@@ -8,10 +8,10 @@ function isNumeric(inputNumeric, precision, scale) {
 exports.isNumeric = isNumeric;
 function assertNumeric(inputNumeric, precision, scale) {
     if (typeof inputNumeric !== "number") {
-        throw new Error("Invalid input [" + inputNumeric + "], value is not a number");
+        throw new Error("Invalid input [".concat(inputNumeric, "], value is not a number"));
     }
     if (!isNumeric(inputNumeric, precision, scale)) {
-        throw new Error("Input numeric [" + inputNumeric + "] is not between specified precision [" + precision + "] and scale [" + scale + "]");
+        throw new Error("Input numeric [".concat(inputNumeric, "] is not between specified precision [").concat(precision, "] and scale [").concat(scale, "]"));
     }
     return inputNumeric;
 }

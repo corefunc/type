@@ -1,4 +1,17 @@
+/**
+ * @type {number}
+ */
 export type TypeNumeric<Precision, Scale> = number & { __numeric__: void };
+
+/**
+ * @type {number}
+ */
+export type NumericType<Precision, Scale> = number & { __numeric__: void };
+
+/**
+ * @type {number}
+ */
+export type Numeric<Precision, Scale> = number & { __numeric__: void };
 
 export function isNumeric<Precision extends number, Scale extends number>(
   inputNumeric: number,
@@ -18,7 +31,9 @@ export function assertNumeric<Precision extends number, Scale extends number>(
     throw new Error(`Invalid input [${inputNumeric}], value is not a number`);
   }
   if (!isNumeric(inputNumeric, precision, scale)) {
-    throw new Error(`Input numeric [${inputNumeric}] is not between specified precision [${precision}] and scale [${scale}]`);
+    throw new Error(
+      `Input numeric [${inputNumeric}] is not between specified precision [${precision}] and scale [${scale}]`,
+    );
   }
   return inputNumeric;
 }

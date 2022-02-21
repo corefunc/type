@@ -7,10 +7,10 @@ function isIntegerRange(inputInteger, minimumInteger, maximumInteger) {
 exports.isIntegerRange = isIntegerRange;
 function assertIntegerRange(inputInteger, minimumInteger, maximumInteger) {
     if (typeof inputInteger !== "number") {
-        throw new Error("Invalid input [" + inputInteger + "], value is not a number");
+        throw new Error("Invalid input [".concat(inputInteger, "], value is not a number"));
     }
     if (!isIntegerRange(inputInteger, minimumInteger, maximumInteger)) {
-        throw new Error("Input integer [" + inputInteger + "] is not between specified [" + minimumInteger + "] and [" + maximumInteger + "]");
+        throw new Error("Input integer [".concat(inputInteger, "] is not between specified [").concat(minimumInteger, "] and [").concat(maximumInteger, "]"));
     }
     return inputInteger;
 }

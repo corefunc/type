@@ -15,8 +15,27 @@ export declare const INT16_MIN: number;
  * @alias smallint
  * @alias int16
  * @alias integer16
+ * @type {number}
  */
 export declare type TypeInteger16 = number & {
+    __integer_16__: void;
+};
+/**
+ * @alias smallint
+ * @alias int16
+ * @alias integer16
+ * @type {number}
+ */
+export declare type Integer16Type = number & {
+    __integer_16__: void;
+};
+/**
+ * @alias smallint
+ * @alias int16
+ * @alias integer16
+ * @type {number}
+ */
+export declare type Integer16 = number & {
     __integer_16__: void;
 };
 /**

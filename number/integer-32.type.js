@@ -31,10 +31,10 @@ exports.isInteger32 = isInteger32;
  */
 function assertInteger32(inputInteger) {
     if (typeof inputInteger !== "number") {
-        throw new TypeError("Invalid input [" + inputInteger + "], value is not a number");
+        throw new TypeError("Invalid input [".concat(inputInteger, "], value is not a number"));
     }
     if (!isInteger32(inputInteger)) {
-        throw new RangeError("Input integer [" + inputInteger + "] is not in integer 4 bytes range");
+        throw new RangeError("Input integer [".concat(inputInteger, "] is not in integer 4 bytes range"));
     }
     return inputInteger;
 }

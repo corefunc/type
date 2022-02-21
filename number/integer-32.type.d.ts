@@ -16,8 +16,29 @@ export declare const INT32_MIN: number;
  * @alias integer
  * @alias int32
  * @alias integer32
+ * @type {number}
  */
 export declare type TypeInteger32 = number & {
+    __integer_32__: void;
+};
+/**
+ * @alias int
+ * @alias integer
+ * @alias int32
+ * @alias integer32
+ * @type {number}
+ */
+export declare type Integer32Type = number & {
+    __integer_32__: void;
+};
+/**
+ * @alias int
+ * @alias integer
+ * @alias int32
+ * @alias integer32
+ * @type {number}
+ */
+export declare type Integer32 = number & {
     __integer_32__: void;
 };
 /**
