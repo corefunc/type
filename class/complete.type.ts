@@ -9,5 +9,5 @@ export type CompleteType<Interface> = {
     Property
     > extends Required<Pick<Interface, Property>>
     ? Interface[Property]
-    : Interface[Property] | undefined;
+    : (Interface[Property] | undefined);
 };

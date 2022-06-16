@@ -29,6 +29,21 @@ class User implements CompleteType<UserInterface> {
 }
 ```
 
+```typescript
+import type {
+  ConcreteType
+} from '@corefunc/type/class/concrete.type';
+interface UserInterface {
+  email: string;
+  nickname?: string;
+}
+// Disallow 'optional' properties from inherited type.
+class User implements ConcreteType<UserInterface> {
+  email: string;
+  nickname: string | undefined;
+}
+```
+
 ## Number
 
 ### Float

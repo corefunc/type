@@ -15,7 +15,7 @@
   "description": "Collection of types",
   "devDependencies": {
     "prettier": "2.7.0",
-    "typescript": ">=4.1.0"
+    "typescript": ">=4.7.3"
   },
   "files": [
     "index.cjs",
@@ -23,6 +23,7 @@
     "index.js",
     "index.mjs",
     "class/complete.type.d.ts",
+    "class/concrete.type.ts",
     "class/index.d.ts",
     "number/float-range.type.js",
     "number/float-range.type.d.ts",
