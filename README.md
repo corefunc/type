@@ -10,6 +10,25 @@ TypeScript common types.
 
 # Reference
 
+## Class
+
+### Complete
+
+```typescript
+import type {
+  CompleteType
+} from '@corefunc/type/class/complete.type';
+interface UserInterface {
+  name: string;
+  zip: string;
+}
+// Forces class to implement all interface properties.
+class User implements CompleteType<UserInterface> {
+  public name: string;
+  public zip: string;
+}
+```
+
 ## Number
 
 ### Float
