@@ -68,6 +68,16 @@ function mixinApiGetUser<T extends ConstructorType<ExchangeClient>>(superClass: 
 class ApiClient extends mixinApiPostUser(mixinApiGetUser(ExchangeClient)) {}
 ```
 
+### Key of class
+
+```typescript
+import { keyOfClass } from '@corefunc/type/class/key-of-class';
+class User {
+  public static readonly name: string = keyOfClass<User>('name');
+  public readonly name: string;
+}
+```
+
 ## Number
 
 ### Float
