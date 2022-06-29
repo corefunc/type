@@ -71,11 +71,24 @@ class ApiClient extends mixinApiPostUser(mixinApiGetUser(ExchangeClient)) {}
 ### Key of class
 
 ```typescript
-import { keyOfClass } from '@corefunc/type/class/key-of-class';
+import { keyOfClass } from "@corefunc/type/class/key-of-class";
 class User {
-  public static readonly name: string = keyOfClass<User>('name');
+  public static readonly name: string = keyOfClass<User>("name");
   public readonly name: string;
 }
+```
+
+## JSON
+
+### JSON types
+
+```typescript
+import type {
+  JsonPrimitiveType,
+  JsonArrayType,
+  JsonObjectType,
+  JsonType,
+} from "@corefunc/type/json";
 ```
 
 ## Number
