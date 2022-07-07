@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.3.4
+
+#### Update
+
+- Documentation updated
+
 ### 1.3.3
 
 #### Added

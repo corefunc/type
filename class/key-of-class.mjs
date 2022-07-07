@@ -6,6 +6,6 @@
  * @returns {string}
  * @since 1.3.2
  */
-export function keyOfClass<ClassName>(propertyName: keyof ClassName): string {
+export function keyOfClass(propertyName) {
   return String(propertyName);
 }
