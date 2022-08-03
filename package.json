@@ -51,7 +51,7 @@
     "string/index.d.ts",
     "object/index.d.ts",
     "object/index.js",
-    "object/values.d.ts",
+    "object/values.type.d.ts",
     "object/values.type.js",
     "string/string-date.type.js",
     "string/string-date.type.d.ts",
@@ -89,5 +89,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "types": "./index.d.ts",
-  "version": "1.3.6"
+  "version": "1.3.7"
 }
