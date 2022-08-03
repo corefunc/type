@@ -2,6 +2,7 @@
   - [Complete](/class/complete.type.md)
   - [Concrete](/class/concrete.type.md)
   - [Constructor](/class/constructor.type.md)
+  - [Error](/class/error.type.md)
   - [Key Of Class](/class/key-of-class.md)
 - JSON
   - [JSON](/json/json.md)
@@ -12,6 +13,8 @@
   - [Integer 64](/number/integer-64.type.md)
   - [Integer Range](/number/integer-range.type.md)
   - [Numeric](/number/numeric-type.md)
+- Object
+  - [Values](/object/values.type.md)
 - String
   - [String Date](/string/string-date.type.md)
   - [String Fixed](/string/string-fixed.type.md)

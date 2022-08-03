@@ -17,4 +17,5 @@ exports.__esModule = true;
 __exportStar(require("./class"), exports);
 __exportStar(require("./json"), exports);
 __exportStar(require("./number"), exports);
+__exportStar(require("./object"), exports);
 __exportStar(require("./string"), exports);

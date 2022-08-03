@@ -17,4 +17,5 @@ exports.__esModule = true;
 __exportStar(require("./complete.type"), exports);
 __exportStar(require("./concrete.type"), exports);
 __exportStar(require("./constructor.type"), exports);
+__exportStar(require("./error.type"), exports);
 __exportStar(require("./key-of-class"), exports);
