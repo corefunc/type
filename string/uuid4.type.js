@@ -1,12 +1,12 @@
 "use strict";
 exports.__esModule = true;
 exports.assertUuid4 = exports.isUuid4 = void 0;
-var class_validator_1 = require("class-validator");
+var uuid_type_1 = require("./uuid.type");
 // type x = '0' | '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | 'a' | 'b' | 'c' | 'd' | 'e' | 'f';
 // export type TypeStringDate = `${x}${x}${x}${x}${x}${x}${x}${x}-${x}${x}${x}${x}-4${x}${x}${x}-${
 //   '1' | '2' | '3'}${x}${x}${x}-${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}`;
 function isUuid4(inputUUID4) {
-    return (0, class_validator_1.isUUID)(inputUUID4, 4);
+    return (0, uuid_type_1.isUuid)(inputUUID4, 4);
 }
 exports.isUuid4 = isUuid4;
 function assertUuid4(inputUUID4) {

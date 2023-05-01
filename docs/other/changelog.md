@@ -1,5 +1,27 @@
 # Changelog
 
+### 1.5.0
+
+#### Added
+
+- `AllOrNoneType`
+
+#### Dependencies
+
+- Removed `class-validator` dependency
+
+### 1.4.0
+
+#### Added
+
+- Common types
+  -  MergeType
+  -  NonPrimitiveType
+  -  PartialByKeysType
+  -  PartialDeepObjectType
+  -  PartialDeepType
+  -  PrimitiveType
+
 ### 1.3.4
 
 #### Update

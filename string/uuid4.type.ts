@@ -1,4 +1,4 @@
-import { isUUID } from "class-validator";
+import { isUuid } from "./uuid.type";
 
 /**
  * @type {string}
@@ -26,7 +26,7 @@ export type UUID4 = string & {
 //   '1' | '2' | '3'}${x}${x}${x}-${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}${x}`;
 
 export function isUuid4(inputUUID4: string): inputUUID4 is TypeUUID4 {
-  return isUUID(inputUUID4, 4);
+  return isUuid(inputUUID4, 4);
 }
 
 export function assertUuid4(inputUUID4: unknown): TypeUUID4 {

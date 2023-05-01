@@ -1,4 +1,5 @@
 - Class
+  - [All Or None](/class/all-or-none.md)
   - [Complete](/class/complete.type.md)
   - [Concrete](/class/concrete.type.md)
   - [Constructor](/class/constructor.type.md)
