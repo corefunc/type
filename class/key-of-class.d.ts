@@ -6,4 +6,4 @@
  * @returns {string}
  * @since 1.3.2
  */
-export declare function keyOfClass<ClassName>(propertyName: keyof ClassName): string;
+export declare function keyOfClass<ClassName>(propertyName: keyof ClassName): keyof ClassName;

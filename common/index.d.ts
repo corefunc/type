@@ -47,3 +47,19 @@ export type PartialDeepType<T> = T extends Date | bigint | boolean | null | numb
   : {
       [K in keyof T]?: PartialDeepType<T[K]>;
     };
+
+/**
+ * @example
+ * ```typescript
+ * interface SomeType {
+ *     prop1: string;
+ *     prop2: string;
+ *     prop3: string;
+ * }
+ * type NewType = OptionalExcept<SomeType, 'prop1' | 'prop2'>
+ * ```
+ */
+export type OptionalExceptType<T, TRequired extends keyof T = keyof T> = Partial<
+  Pick<T, Exclude<keyof T, TRequired>>
+> &
+  Required<Pick<T, TRequired>>;

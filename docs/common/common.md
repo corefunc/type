@@ -8,6 +8,7 @@ _Since `1.4.0`_
 import type {
   MergeType,
   NonPrimitiveType,
+  OptionalExceptType,
   PartialByKeysType,
   PartialDeepObjectType,
   PartialDeepType,
